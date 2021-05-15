@@ -1,0 +1,11 @@
+main {
+  min-height: 80vh;
+}
+
+li {
+  list-style: none;
+  padding-top: 3px;
+  font-size: 13px;
+  font-stretch: expanded;
+  color: gray;
+}
