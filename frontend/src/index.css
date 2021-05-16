@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
 main {
   min-height: 80vh;
 }
@@ -8,4 +12,15 @@ li {
   font-size: 13px;
   font-stretch: expanded;
   color: gray;
+}
+
+.carousel-caption h3 {
+  color: antiquewhite;
+  font-size: 30px;
+  font-weight: bold;
+}
+.carousel-caption p {
+  color: antiquewhite;
+  font-size: 20px;
+  font-weight: normal;
 }

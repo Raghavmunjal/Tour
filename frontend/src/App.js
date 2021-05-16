@@ -8,7 +8,7 @@ const App = () => {
     <>
       <Router>
         <Header />
-        <main className='py-3'>
+        <main>
           <Route path='/' exact component={HomeScreen} />
         </main>
         <Footer />

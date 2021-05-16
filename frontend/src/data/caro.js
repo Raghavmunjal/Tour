@@ -5,22 +5,26 @@ import banner4 from '../images/banner4.jpg'
 
 const caro = [
   {
-    img: { banner1 },
+    _id: 1,
+    img: banner1,
     title: 'Never Let Your Memories Be Greater Than Your Dreams.',
     desc: 'Tristique Senectus Et Netus Et Malesuada',
   },
   {
-    img: { banner2 },
+    _id: 2,
+    img: banner2,
     title: 'It Is Better To Travel Than To Arrive. Lets Be Adventurers.',
     desc: 'Tristique Senectus Et Netus Et Malesuada',
   },
   {
-    img: { banner3 },
+    _id: 3,
+    img: banner3,
     title: 'Never Let Your Memories Be Greater Than Your Dreams.',
     desc: 'Tristique Senectus Et Netus Et Malesuada',
   },
   {
-    img: { banner4 },
+    _id: 4,
+    img: banner4,
     title: 'It Is Better To Travel Than To Arrive. Lets Be Adventurers.',
     desc: 'Tristique Senectus Et Netus Et Malesuada',
   },
