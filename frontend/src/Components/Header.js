@@ -29,7 +29,9 @@ const Header = () => {
                   <Nav.Link>Contact</Nav.Link>
                 </LinkContainer>
                 <LinkContainer to='/' className='px-3'>
-                  <Button variant='primary'>Book Now</Button>
+                  <Button style={{ backgroundColor: 'rgb(66, 133, 244)' }}>
+                    Book Now
+                  </Button>
                 </LinkContainer>
               </Nav>
             </Navbar.Collapse>

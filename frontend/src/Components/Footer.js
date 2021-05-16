@@ -50,11 +50,24 @@ const Footer = () => {
                     <br />
                     libero. Lorem ipsum dolor.
                   </li>
-                  <li className='py-3'>
-                    <i class='fab fa-facebook-square fa-2x px-1'></i>
-                    <i class='fab fa-linkedin fa-2x px-1'></i>
-                    <i class='fab fa-google-plus-square fa-2x px-1'></i>
-                    <i class='fab fa-twitter-square fa-2x px-1'></i>
+                  <li className='py-3 px-1'>
+                    <i
+                      class='fab fa-facebook-f  px-2 py-2 me-2'
+                      style={{ color: '#fff', backgroundColor: '#3b5998' }}
+                    ></i>
+                    <i
+                      class='fab fa-twitter  px-2 py-2  me-2'
+                      style={{ color: '#fff', backgroundColor: '#1da1f2' }}
+                    ></i>
+                    <i
+                      class='fab fa-google-plus-g px-2 py-2  me-2'
+                      style={{ color: '#fff', backgroundColor: '#dd4b39' }}
+                    ></i>
+
+                    <i
+                      class='fab fa-linkedin-in px-2 py-2  me-2'
+                      style={{ color: '#fff', backgroundColor: '#0077b5' }}
+                    ></i>
                   </li>
                 </ul>
               </Col>
@@ -85,12 +98,12 @@ const Footer = () => {
                   </li>
                   <li>
                     <span>Darlington</span>
-                    <span className='px-5'> &nbsp;&nbsp;India</span>
+                    <span className='px-5'> &nbsp;&nbsp;&nbsp;India</span>
                   </li>
                   <li>
                     <span>Germany</span>
                     <span className='px-5'>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Australia
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Australia
                     </span>
                   </li>
                   <li>South Africa </li>
