@@ -1,20 +1,12 @@
 import React from 'react'
-import { Row, Col, Button, Container } from 'react-bootstrap'
-import Explore from '../Components/Explore'
 import TourPackages from '../Components/TourPackages'
-import EnjoyTrip from '../Components/EnjoyTrip'
+import { Col, Row, Container } from 'react-bootstrap'
 import TourDestinations from '../Components/TourDestinations'
-import PicsCarousel from '../Components/PicsCarousel'
-import Experience from '../Components/Experience'
-import PlanTrip from '../Components/PlanTrip'
-
-const HomeScreen = () => {
+const PackageScreen = () => {
   return (
     <>
-      <PicsCarousel />
-      <Explore />
-      <Experience />
-      <PlanTrip />
+      <Row>&nbsp;</Row>
+      <Row>&nbsp;</Row>
       <div>
         <Container>
           <Row>
@@ -50,25 +42,13 @@ const HomeScreen = () => {
       </div>
       <Row>&nbsp;</Row>
       <Row>&nbsp;</Row>
-
       <TourPackages />
-
-      <Container>
-        <Row>
-          <Col>
-            <center>
-              <Button variant='primary'>View All Packages</Button>
-            </center>
-          </Col>
-        </Row>
-        <Row>&nbsp;</Row>
-        <Row>&nbsp;</Row>
-      </Container>
-
-      <EnjoyTrip />
+      <TourPackages />
+      <Row>&nbsp;</Row>
+      <Row>&nbsp;</Row>
       <TourDestinations />
     </>
   )
 }
 
-export default HomeScreen
+export default PackageScreen

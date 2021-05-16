@@ -22,7 +22,7 @@ const Places = ({ items }) => {
           </Card.Text>
           <Card.Text as='span'>
             <i class='far fa-clock' style={{ color: '#1da1f2' }}></i>
-            &nbsp;Duration : {items.days}
+            &nbsp;Duration : {items.days} days
           </Card.Text>
         </Card.Body>
       </Card>
