@@ -4,20 +4,24 @@ import jap from '../images/japan.jpg'
 import singa from '../images/singa.jpg'
 const destinations = [
   {
+    _id: 1,
     place: 'CHINA',
-    image: { ch },
+    imag: ch,
   },
   {
+    _id: 2,
     place: 'MALAYSIA',
-    image: { mal },
+    imag: mal,
   },
   {
+    _id: 3,
     place: 'JAPAN',
-    image: { jap },
+    imag: jap,
   },
   {
+    _id: 4,
     place: 'SINGAPORE',
-    image: { singa },
+    imag: singa,
   },
 ]
 export default destinations

@@ -3,7 +3,9 @@ import { Carousel, Row, Col, Button, Container } from 'react-bootstrap'
 import caro from '../data/caro'
 import p5 from '../images/p5.jpg'
 import packages from '../data/packages'
+import destinations from '../data/destination'
 import Places from '../Components/Places'
+import PopularPlaces from '../Components/PopularPlaces'
 
 const HomeScreen = () => {
   return (
@@ -11,7 +13,7 @@ const HomeScreen = () => {
       <Carousel fade pause='hover' interval='8000' className='carousel'>
         {caro.map((item) => (
           <Carousel.Item key={caro._id}>
-            <img className='d-block w-100' src={item.img} alt={item._id} />
+            <img className='d-block w-100 imgg' src={item.img} alt={item._id} />
             <Container>
               <Carousel.Caption className='carousel-caption'>
                 <Row>
@@ -59,6 +61,7 @@ const HomeScreen = () => {
           <Col sm={12} lg={6}>
             <img
               src={p5}
+              className='imagee'
               alt='p5'
               style={{ height: '420px', width: '500px' }}
             />
@@ -171,16 +174,18 @@ const HomeScreen = () => {
           <Row>
             <Col sm={6} md={6} lg={4}>
               <ul>
-                <li>
-                  <i
-                    class='fas fa-map-signs fa-3x'
-                    style={{
-                      color: '#1da1f2',
-                      backgroundColor: 'white',
-                      borderRadius: '50%',
-                      border: '20px solid white',
-                    }}
-                  ></i>
+                <li className='py-2'>
+                  <center>
+                    <i
+                      class='fas fa-map-signs fa-3x'
+                      style={{
+                        color: '#1da1f2',
+                        backgroundColor: 'white',
+                        borderRadius: '50%',
+                        border: '20px solid white',
+                      }}
+                    ></i>
+                  </center>
                 </li>
                 <li>
                   <h5
@@ -209,16 +214,18 @@ const HomeScreen = () => {
             </Col>
             <Col sm={6} md={6} lg={4}>
               <ul>
-                <li>
-                  <i
-                    class='far fa-calendar-alt fa-3x'
-                    style={{
-                      color: '#1da1f2',
-                      backgroundColor: 'white',
-                      borderRadius: '50%',
-                      border: '20px solid white',
-                    }}
-                  ></i>
+                <li className='py-2'>
+                  <center>
+                    <i
+                      class='far fa-calendar-alt fa-3x'
+                      style={{
+                        color: '#1da1f2',
+                        backgroundColor: 'white',
+                        borderRadius: '50%',
+                        border: '20px solid white',
+                      }}
+                    ></i>
+                  </center>
                 </li>
                 <li>
                   <h2
@@ -247,16 +254,18 @@ const HomeScreen = () => {
             </Col>
             <Col sm={6} md={6} lg={4}>
               <ul>
-                <li>
-                  <i
-                    class='fas fa-gift fa-3x'
-                    style={{
-                      color: '#1da1f2',
-                      backgroundColor: 'white',
-                      borderRadius: '50%',
-                      border: '20px solid white',
-                    }}
-                  ></i>
+                <li className='py-2'>
+                  <center>
+                    <i
+                      class='fas fa-gift fa-3x'
+                      style={{
+                        color: '#1da1f2',
+                        backgroundColor: 'white',
+                        borderRadius: '50%',
+                        border: '20px solid white',
+                      }}
+                    ></i>
+                  </center>
                 </li>
                 <li>
                   <h5
@@ -335,6 +344,89 @@ const HomeScreen = () => {
             )
           })}
         </Row>
+        <Row>&nbsp;</Row>
+
+        <Row>
+          <Col>
+            <center>
+              <Button variant='primary'>View All Packages</Button>
+            </center>
+          </Col>
+        </Row>
+        <Row>&nbsp;</Row>
+        <Row>&nbsp;</Row>
+      </Container>
+      <div className='back_image'>
+        <Container>
+          <Row>&nbsp;</Row>
+          <Row>&nbsp;</Row>
+          <Row>
+            <Col sm={12} md={8} lg={6}>
+              <h2 className='mb-4' style={{ fontSize: '35px', color: 'white' }}>
+                Enjoy The Trip
+              </h2>
+              <p className='mb-4' style={{ fontSize: '15px', color: 'white' }}>
+                Duis nisi sapien, elementum finibus fermentum eget, aliquet leo
+                et. Mauris hendrerit vel ex. Quisque vitae luctus massa.
+                Phasellus sed aliquam leo a massa eu fringilla. Integer ultrices
+                finibus sed nisi. in convallis felis dapibus sit amet.
+              </p>
+              <Button className='mb-4'>Book Now</Button>
+            </Col>
+          </Row>
+          <Row>&nbsp;</Row>
+          <Row>&nbsp;</Row>
+        </Container>
+      </div>
+      <Row>&nbsp;</Row>
+      <Row>&nbsp;</Row>
+      <Row>&nbsp;</Row>
+      <div>
+        <Container>
+          <Row>
+            <Col>
+              <p
+                style={{
+                  textAlign: 'center',
+                  color: 'black',
+                  fontSize: '40px',
+                }}
+              >
+                Popular Destinations
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <p
+                className='px-5 '
+                style={{
+                  textAlign: 'center',
+                  color: 'gray',
+                  fontSize: '17px',
+                }}
+              >
+                Vestibulum tellus neque, sodales vel mauris at, rhoncus finibus
+                augue. Vestibulum urna <br />
+                ligula, molestie at ante ut, finibus vulputate felis.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <Row>&nbsp;</Row>
+      <Row>&nbsp;</Row>
+      <Container>
+        <Row>
+          {destinations.map((item) => {
+            return (
+              <Col key={item._id} sm={12} md={6} lg={4} xl={3}>
+                <PopularPlaces items={item} />
+              </Col>
+            )
+          })}
+        </Row>
+        <Row>&nbsp;</Row>
       </Container>
     </>
   )

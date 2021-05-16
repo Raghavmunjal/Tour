@@ -4,15 +4,26 @@ const Places = ({ items }) => {
   return (
     <>
       <Card className='my-3 p-3 rounded' style={{ border: 'none' }}>
-        <Card.Img src={items.img} variant='top' style={{ height: '250px' }} />
+        <Card.Img
+          className='imagee'
+          src={items.img}
+          variant='top'
+          style={{ height: '250px', border: 'none' }}
+        />
 
-        <Card.Body>
-          <Card.Title as='div'>
-            <strong>{items.country}</strong>
+        <Card.Body style={{ backgroundColor: 'whitesmoke' }}>
+          <Card.Title as='div' className='text-muted'>
+            <i class='fas fa-map-marker-alt' style={{ color: '#1da1f2' }}></i>
+            &nbsp;{items.country}
           </Card.Title>
-          <Card.Text as='h6'>{items.title}</Card.Text>
-          <Card.Text as='p'>{items.desc}</Card.Text>
-          <Card.Text as='span'>Duration : {items.days}</Card.Text>
+          <Card.Text as='h5'>{items.title}</Card.Text>
+          <Card.Text as='p' className='text-muted'>
+            {items.desc}
+          </Card.Text>
+          <Card.Text as='span'>
+            <i class='far fa-clock' style={{ color: '#1da1f2' }}></i>
+            &nbsp;Duration : {items.days}
+          </Card.Text>
         </Card.Body>
       </Card>
     </>

@@ -24,3 +24,19 @@ li {
   font-size: 20px;
   font-weight: normal;
 }
+.back_image {
+  background-image: url('./images/p9.jpg');
+}
+@media screen and (max-width: 700px) {
+  .carousel-caption h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carousel-caption h3 {
+    font-size: 15px;
+  }
+  .imgg {
+    height: 240px;
+  }
+}

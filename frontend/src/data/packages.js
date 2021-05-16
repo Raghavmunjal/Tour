@@ -1,7 +1,7 @@
 import p1 from '../images/p1.jpg'
 import p2 from '../images/p2.jpg'
 import p3 from '../images/p3.jpg'
-import p4 from '../images/p4.jpg'
+import p7 from '../images/p7.jpg'
 
 const packages = [
   {
@@ -30,7 +30,7 @@ const packages = [
   },
   {
     _id: 4,
-    img: p4,
+    img: p7,
     country: 'Sydney, Austrailia.',
     title: 'Sodales Vel Mauris',
     desc: 'Vestibulum tellus neque, et velit mauris at, augue.',
