@@ -26,7 +26,12 @@ const Service = () => {
 
           <Row>
             <Col sm={8} md={6} lg={3}>
-              <img src={te1} alt='' style={{ height: '180px' }} />
+              <img
+                src={te1}
+                alt=''
+                className='service-img'
+                style={{ height: '180px' }}
+              />
             </Col>
 
             <Col sm={8} md={6} lg={3}>
@@ -146,7 +151,12 @@ const Service = () => {
 
           <Row>
             <Col sm={8} md={6} lg={3}>
-              <img src={te2} alt='' style={{ height: '180px' }} />
+              <img
+                src={te2}
+                alt=''
+                className='service-img'
+                style={{ height: '180px' }}
+              />
             </Col>
 
             <Col sm={8} md={6} lg={3}>

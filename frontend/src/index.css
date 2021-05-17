@@ -27,16 +27,40 @@ li {
 .back_image {
   background-image: url('./images/p9.jpg');
 }
+
+.book-form {
+  padding: 3em;
+  background: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 990px) {
+  .booking-img {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .service-img {
+    margin-left: 73px;
+  }
+}
 @media screen and (max-width: 700px) {
   .carousel-caption h3 {
     font-size: 18px;
   }
+  .service-img {
+    padding: 10px;
+  }
 }
+
 @media screen and (max-width: 500px) {
   .carousel-caption h3 {
     font-size: 15px;
   }
   .imgg {
     height: 240px;
+  }
+  .service-img {
+    padding: 10px;
   }
 }

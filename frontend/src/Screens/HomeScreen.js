@@ -7,6 +7,7 @@ import TourDestinations from '../Components/TourDestinations'
 import PicsCarousel from '../Components/PicsCarousel'
 import Experience from '../Components/Experience'
 import PlanTrip from '../Components/PlanTrip'
+import { Link } from 'react-router-dom'
 
 const HomeScreen = () => {
   return (
@@ -57,7 +58,9 @@ const HomeScreen = () => {
         <Row>
           <Col>
             <center>
-              <Button variant='primary'>View All Packages</Button>
+              <Link to='/package'>
+                <Button variant='primary'>View All Packages</Button>
+              </Link>
             </center>
           </Col>
         </Row>
