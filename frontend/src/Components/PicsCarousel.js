@@ -20,7 +20,11 @@ const PicsCarousel = () => {
 
                 <Row>
                   <Col sm={12} lg={6}>
-                    <Button className='carousel-button  me-2'>About Us</Button>
+                    <LinkContainer to='/about'>
+                      <Button className='carousel-button  me-2'>
+                        About Us
+                      </Button>
+                    </LinkContainer>
                     <LinkContainer to='/book'>
                       <Button className='carousel-button'>Book Now</Button>
                     </LinkContainer>

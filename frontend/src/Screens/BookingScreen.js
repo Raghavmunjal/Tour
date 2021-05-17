@@ -187,6 +187,7 @@ const BookingScreen = ({ history }) => {
                   <Col sm={12} className='mb-3'>
                     <Form.Control
                       type='textarea'
+                      size='lg'
                       placeholder='Message'
                       value={msg}
                       required
