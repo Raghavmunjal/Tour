@@ -1,6 +1,7 @@
 import React from 'react'
 import { Carousel, Row, Col, Button, Container } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
+
 import caro from '../data/caro'
 const PicsCarousel = () => {
   return (
@@ -35,6 +36,7 @@ const PicsCarousel = () => {
           </Carousel.Item>
         ))}
       </Carousel>
+
       <Row>&nbsp;</Row>
       <Row>&nbsp;</Row>
       <Row>&nbsp;</Row>

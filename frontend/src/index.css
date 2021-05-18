@@ -27,6 +27,24 @@ li {
 .back_image {
   background-image: url('./images/p9.jpg');
 }
+.about-image {
+  background: url('./images/choosee.jpg') no-repeat center;
+  background-size: cover;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+}
+.overlay-all {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.border-about {
+  padding: 3em;
+  border: 1px solid white;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
 
 .book-form {
   padding: 3em;

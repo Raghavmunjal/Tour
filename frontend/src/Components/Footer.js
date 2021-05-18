@@ -127,19 +127,32 @@ const Footer = () => {
                     get latest news <br />
                     and updates from us.
                   </li>
+                  <li className='py-4'>
+                    <input
+                      type='email'
+                      style={{
+                        backgroundColor: 'transparent',
+                        height: '40px',
+                        width: '200px',
+                        color: 'white',
+                        border: '0.4px solid whitesmoke',
+                      }}
+                      placeholder=' Enter Your Email...'
+                    />
+                  </li>
                 </ul>
               </Col>
             </Row>
             <Row>&nbsp;</Row>
             <Row>
-              <Col></Col>
               <Col>
-                <span style={{ color: 'gray' }}>
-                  &copy; {new Date().getFullYear()} Grand Tour | All Rights
-                  Reserved
-                </span>
+                <center>
+                  <span style={{ color: 'gray' }}>
+                    &copy; {new Date().getFullYear()} Grand Tour | All Rights
+                    Reserved
+                  </span>
+                </center>
               </Col>
-              <Col></Col>
             </Row>
           </Container>
         </div>

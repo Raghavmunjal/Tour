@@ -6,16 +6,16 @@ const customer = [
   {
     _id: 1,
     name: 'ELISA KER',
-    imag: te2,
+    imag: te3,
   },
   {
     _id: 2,
     name: 'JOHNSON',
-    imag: te3,
+    imag: te2,
   },
   {
     _id: 3,
-    place: 'ELIZABETH',
+    name: 'ELIZABETH',
     imag: te1,
   },
 ]
